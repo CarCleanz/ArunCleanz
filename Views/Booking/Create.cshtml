@@ -1,0 +1,11 @@
+@model CarCleanz.Models.Booking
+
+<form asp-action="Create" asp-controller="Booking" method="post">
+
+    <label>Name</label>
+    <input asp-for="Name" class="form-control" required />
+
+    <label>Mobile</label>
+    <input asp-for="Mobile" class="form-control" required />
+
+</form>
