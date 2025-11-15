@@ -31,9 +31,9 @@
             <label asp-for="VehicleType"></label>
             <select asp-for="VehicleType" class="form-control" required>
                 <option value="">-- Select Vehicle Type --</option>
-                <option value="Car">Car</option>
-                <option value="Van">Van</option>
-                <option value="SUV">SUV</option>
+                <option value="hatchback">Car</option>
+                <option value="sedan">Van</option>
+                <option value="suv">SUV</option>
             </select>
             <span asp-validation-for="VehicleType" class="text-danger"></span>
         </div>
@@ -60,7 +60,7 @@
         <div class="form-group">
             
             <input asp-for="BookingDate" type="date" class="form-control" required />
-            <span asp-validation-for="BookingDate" class="text-danger"></span>
+            <span asp-validation-for="BookingDate" class="text-danger">BookingDate</span>
         </div>
 
         <button type="submit" class="btn btn-danger" style="margin-top:20px; width:100%;">Submit</button>
