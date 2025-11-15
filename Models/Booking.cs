@@ -29,6 +29,7 @@ public int Id { get; set; }
 
         public int Price { get; set; }
 
+
         
 [DataType(DataType.Date)]
 public DateTime? BookingDate { get; set; }
