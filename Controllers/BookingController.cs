@@ -20,6 +20,21 @@ namespace CarCleanz.Controllers
         {
             return View();
         }
+// GET: Booking/Payment/5
+[HttpGet]
+public IActionResult Payment(int id)
+{
+    var booking = _context.Bookings.FirstOrDefault(b => b.Id == id);
+
+    if (booking == null)
+    {
+        return NotFound();
+    }
+
+    return View(booking);
+}
+
+
 
         // POST: Booking/Create
        [HttpPost]
